@@ -7,15 +7,16 @@ const createElement = function (data) {
   //articleKanap.classList.add("kanapProduit");
  // articleKanap.className = "kanapCSS1";
 
-  const link = document.createElement("A");
+ const link = document.createElement("A");
   link.href = "product.html?id=" + data._id;
-
   articleKanap.appendChild(link);
 
   const sousArticleKanap = document.createElement("Article");
   //elChild.classList.add("imgContainer");
-  articleKanap.appendChild(sousArticleKanap);
+  link.appendChild(sousArticleKanap);
   //el.appendChild(elChild);
+
+  
 
   const imgKanap = document.createElement("IMG");
   //imgKanap.className = "kanapCSS2";
